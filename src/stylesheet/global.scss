@@ -1,0 +1,77 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+
+// variable declaration
+
+:root {
+	--bg-hero: rgba(0, 0, 0, 0.8);
+	--bg-white: #fff;
+	--bg-button: #c29525;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+// typography
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Baloo Da 2", serif;
+	margin-bottom: 1.6rem;
+}
+h1 {
+	font-size: 5rem;
+	letter-spacing: 0.3rem;
+}
+p {
+	font-family: "Josefin Slab", serif;
+	font-size: 2rem;
+	letter-spacing: 0.3rem;
+}
+
+img {
+	width: 100%;
+}
+
+// button
+
+.theme-btn {
+	font-size: 1.6rem;
+	padding: 1.5rem 4rem;
+	background-color: var(--bg-button);
+	color: var(--bg-white);
+	outline: none;
+	border: none;
+}
+
+// section heading
+
+.section-heading {
+	text-align: center;
+	h1 {
+		font-size: 3rem;
+		font-family: "Nunito Sans" serif;
+	}
+}
+.section-heading {
+	position: relative;
+	padding-bottom: 2rem;
+	&::after {
+		content: "";
+		border-bottom: 2px solid var(--bg-button);
+		width: 12rem;
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
