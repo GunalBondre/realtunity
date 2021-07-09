@@ -31,6 +31,16 @@
 					color: var(--bg-button);
 				}
 			}
+			@media (max-width: 480px) {
+				margin-top: 2rem;
+				width: 100%;
+			}
 		}
+		@media (max-width: 480px) {
+			flex-direction: column;
+		}
+	}
+	@media (max-width: 480px) {
+		margin-top: -2px;
 	}
 }
